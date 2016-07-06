@@ -1,0 +1,27 @@
+//font squirell
+@font-face
+{
+    font-family: 'nillandregular';
+    src: url('../fonts/nilland-webfont.woff2') format('woff2'),
+         url('../fonts/nilland-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'nillandbold';
+    src: url('../fonts/nilland-bold-webfont.woff2') format('woff2'),
+         url('../fonts/nilland-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//fontes
+$font-main: 'nillandregular', 'PT Serif', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-size-base: 10px;
+$font-weight-base: 100;
+
+//cores
+$color-txt-menu: "#000";
+$color-main: "#333";

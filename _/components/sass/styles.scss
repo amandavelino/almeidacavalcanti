@@ -1,0 +1,14 @@
+//Compass
+@import "compass";
+@import "compass/reset";
+
+//fonts
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
+
+//Core partials
+@import "variables";
+@import "mixins";
+@import "layout";
+
+//Core modules - sessoes/paginas do site
+@import "modules/header";
