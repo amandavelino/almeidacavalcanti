@@ -4,7 +4,7 @@
   "description": "Almeida Cavalcanti Advogados",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/amandavelino/almeidacavalcanti.git"
   },
   "author": "Amanda Avelino",
   "devDependencies": {

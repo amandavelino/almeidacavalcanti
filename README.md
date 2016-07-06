@@ -50,3 +50,4 @@ Processo de Desenvolvimento iniciado em 19/05/2016 na Recife Sites
 3. CD para a pasta `cd projetobase`
 4. Run `> npm-install` to install the project dependencies
 5. Rode o comando Gulp `> gulp`
+6. Para atualizar os arquivos na nuvem usar comando: 'git push -u origin master'
