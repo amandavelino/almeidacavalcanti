@@ -426,7 +426,7 @@ header#principal nav .hasSubmenu:hover .submenu {
   position: relative;
   clear: both;
   margin: -5px 0;
-  z-index: 20;
+  z-index: 5;
   float: left;
   background: #272727;
   width: 100%;
@@ -1412,10 +1412,10 @@ input[type="submit"]:focus {
   height: 100%;
   width: 320px;
   overflow: hidden;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 /* line 44, ../components/sass/modules/_mobile.scss */
 #menu-mobile ul {
