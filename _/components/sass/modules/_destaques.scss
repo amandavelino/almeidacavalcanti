@@ -1,0 +1,131 @@
+#destaques
+{
+
+	position: relative;
+	clear: both;
+	margin: -5px 0;
+	z-index: 20;
+	float: left;
+	background: $color-main;
+	width: 100%;
+
+	@include breakpoint(max-width $tablet-land)
+	{
+		height: 315px;
+	}
+
+	@include breakpoint(max-width $tablet-port)
+	{
+		height: auto;
+	}
+
+	.destaque
+	{
+		width: 33.33%;
+		height: 460px;
+		float: left;
+		position: relative;
+		overflow: hidden;
+
+		@include breakpoint(max-width $tablet-land)
+		{
+			height: 100%;
+		}
+
+		@include breakpoint(max-width $tablet-port)
+		{
+			&.bgTxt
+			{
+				width: 100%;
+				height: auto;
+			}
+
+			&.special
+			{
+				display: none;
+			}
+		}		
+
+		header 
+		{
+			padding: 35px 40px;
+
+			@include breakpoint(max-width $desktop-land)
+			{
+				padding: 20px 40px;
+			}	
+
+			h3 
+			{
+				color: #fff;
+			}
+
+		}
+
+		p 
+		{
+			color: #fff;
+			padding: 0 40px;
+		}
+
+		&.bgTxt 
+		{
+			margin-top: -40px;
+			padding-bottom: 40px;
+
+			&:before 
+			{
+				content: "";
+				background-color: $bg-header;
+				position: absolute;
+				width: 200%;
+				height: 100%;
+				top: 0;
+				left: -100%;
+				z-index: -10;
+			}
+
+		}
+
+		img 
+		{	
+			max-width: 100%; 
+			border-right: 1px solid #ddd;
+		}
+
+		footer 
+		{
+
+			background: $color-main;
+			position: absolute;
+			z-index: 10;
+			bottom: 5px;
+			padding: 15px 5%;
+			height: 75px;
+			width: 90%;
+
+			h4 
+			{
+				color: #fff;
+				font-size: $font-size-base * 2.5;
+				padding: 0 0 10px;
+	
+				@include breakpoint(max-width $desktop-land)
+				{
+					font-size: $font-size-base * 2;
+					padding-bottom: 5px;
+				}	
+
+			}
+
+			p 
+			{
+				color: #cecece;
+				padding:0;
+			}
+
+		}
+
+	}
+
+}

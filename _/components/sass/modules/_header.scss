@@ -1,5 +1,189 @@
-header
+header#principal
 {
- width:100%;
- position:relative;
+	background: $bg-header;	
+	width:100%;
+	position:relative;
+	z-index: 10;
+
+	&:before 
+	{
+		content: "";
+		background: $bg-main;
+		width: 100%;
+		height: 150px;
+		position: absolute;
+		left: -10%;
+		z-index: 0;
+
+		@include breakpoint(max-width $desktop-land)
+		{
+			left: 0;
+		}
+
+		@include breakpoint(max-width ($desktop-port - 1))
+		{
+			height: 100px;
+		}			
+
+	}
+
+	.container 
+	{
+		position: relative;
+		z-index: 10;
+	}
+	
+	//width: span (x narrow) [narrow, wide, wider]
+	#logo 
+	{
+		width: span(3 wide);
+		float: left;
+
+		h1 
+		{
+			width: 267px;
+			height: 75px;
+		
+			a
+			{
+				background: url('../imgs/almeida-cavalcanti.png') no-repeat left center;
+				background: url('../imgs/svg/almeida-cavalcanti.svg') no-repeat left center;				
+				display: block;
+			 	width: 100%;
+			 	height: 100%;
+			 	padding: 30px 0;
+			 	text-indent: -9999px;
+
+				@include breakpoint(max-width ($desktop-port - 1))
+				{
+					padding: 10px 0;
+				}	
+
+			}
+
+		}
+
+	}
+
+	nav 
+	{
+		width: span(7 wide);
+		float: right;
+
+		@include breakpoint(max-width ($desktop-port - 1))
+		{
+			display: none;
+		}	
+
+		@include breakpoint(max-width $tablet-port)
+		{}
+
+		ul
+		{
+
+			li 
+			{
+				display: inline-block;
+				margin: 0 15px;
+				position: relative;
+
+				@include breakpoint(max-width $desktop-land)
+				{
+					margin: 0 10px;
+				}	
+
+				&.active
+				{
+					a 
+					{
+						color: $bg-header;
+					}
+				}
+
+				&:last-child
+				{
+					padding-right: 0;
+				}	
+
+				a 
+				{
+					color: $color-main;
+					font-family: $font-main;
+					font-size: $font-size-base * 2;
+					line-height: 7em;
+
+					@include breakpoint(max-width $desktop-land)
+					{
+						font-size: $font-size-base * 1.8;
+					}	
+
+					&:hover 
+					{
+						color: $bg-header;
+					}
+
+				}
+
+			}
+
+		}
+
+		.submenu
+		{
+			position: absolute;
+			top: 140px;
+			left: -10%;
+			width: 200%;
+			padding: 20px 0 15px;
+			background: #fff;
+			background: rgba(255,255,255,.8);
+
+			top: 100px;
+			@include opacity(0);
+			@include transition(all .2s ease-in-out);
+			
+			li 
+			{
+				padding: 5px;
+				width: 75%;
+				margin: 0 20px;
+				border-bottom: 1px solid $color-border-menu;
+
+				&:last-child 
+				{
+					padding: 5px;
+					border-bottom: 0 none;
+				}
+
+				a 
+				{
+					line-height: 1.5em;
+					font-size: $font-size-base * 1.8;
+				}
+			}
+
+		}
+
+		.hasSubmenu
+		{
+
+			&:hover
+			{
+				.submenu 
+				{
+					@include opaque;
+					top: 140px;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+.cs_arrownext,
+.cs_arrowprev
+{
+	display: none;
 }

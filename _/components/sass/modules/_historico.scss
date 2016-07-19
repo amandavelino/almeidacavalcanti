@@ -1,0 +1,66 @@
+.destaques-valores
+{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 5em;
+
+	.destaque-valores 
+	{
+		width: 48%;
+		background: $color-main;
+		float: left;
+		position: relative;
+
+		@include breakpoint(max-width ($desktop-port - 1))
+		{
+			width: 100%;
+			margin-bottom: 20px;
+		}			
+
+		&.right 
+		{
+			float: right;
+		}
+
+		a 
+		{
+			display: block;
+			width: 90%;
+			height: 100%;
+			padding: 30px;
+			position: relative;
+		}
+
+		h4 
+		{
+			margin-bottom: .3em!important;
+		}
+
+		h4, p 
+		{
+			color: $bg-cinza-ie;
+			padding-right: 150px;
+			margin-bottom: 0;
+
+			@include breakpoint(max-width ($desktop-port - 1))
+			{
+				padding-right: 120px;
+			}			
+
+		}
+
+		&:before
+		{
+			background: $color-subheader url("../imgs/seta-right.png") no-repeat 50% 50%;
+			content: "";
+			width: 20%;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 5;
+		}	
+
+	}
+
+}

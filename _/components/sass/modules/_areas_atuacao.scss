@@ -1,0 +1,67 @@
+.atuacoes
+{
+
+  width: 105%;
+  margin: 0 -2.5%;
+  overflow: hidden;
+
+  //768px
+  @include breakpoint(max-width ($tablet-port - 1))
+  {
+    width: 100%;
+    margin: 0%;
+  }   
+
+  header
+  {
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .interna 
+  {
+  
+    p 
+    {
+      text-align: justify;
+    }
+
+  }
+
+  .item-atuacao
+  {
+    background-position: 50% 0%;
+    width: 28.33%;
+    margin: 0 2.5%;
+    float: left;
+
+    //768px
+    @include breakpoint(max-width ($tablet-port - 1))
+    {
+      margin: 0;
+      width: 100%;
+    } 
+
+  }
+
+  .at-01
+  {
+    background-image: url("../imgs/icon_atuacao01.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .at-02
+  {
+    background-image: url("../imgs/icon_atuacao02.jpg");
+    background-repeat: no-repeat;
+  }  
+
+  .at-03
+  {
+    background-image: url("../imgs/icon_atuacao03.jpg");
+    background-repeat: no-repeat;
+  }    
+
+}

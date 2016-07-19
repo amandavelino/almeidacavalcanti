@@ -1,14 +1,33 @@
-//Compass
+//sass imports
 @import "compass";
 @import "compass/reset";
+@import "compass/css3/transition";
+@import "susy";
+@import "breakpoint";
+@import "compass/css3/user-interface";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
 
 //fonts
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 
 //Core partials
 @import "variables";
 @import "mixins";
+@import "ie";
 @import "layout";
 
 //Core modules - sessoes/paginas do site
 @import "modules/header";
+@import "modules/destaques";
+@import "modules/noticias_contato";
+@import "modules/historico";
+@import "modules/estrutura_fisica";
+@import "modules/areas_atuacao";
+@import "modules/noticias";
+@import "modules/contato";
+@import "modules/localizacao";
+@import "modules/equipe";
+@import "modules/mobile";
+@import "modules/footer";

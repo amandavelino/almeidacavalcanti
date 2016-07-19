@@ -1,6 +1,17 @@
-//importando jquery como dependencia
-$ = require('jquery');
+$(function() {
+  
+  $("#slides").superslides({
+    hashchange: true
+  });
 
-$(document).ready(function(){
-	
-});//
+  $("#icon-mobile").click(function(){
+  	$("body").addClass("expanded");
+  	return false;
+  });
+
+  $(".close").click(function(){
+  	$("body").removeClass("expanded");
+  	return false;
+  });  
+
+});

@@ -1,27 +1,62 @@
-//font squirell
-@font-face
-{
-    font-family: 'nillandregular';
-    src: url('../fonts/nilland-webfont.woff2') format('woff2'),
-         url('../fonts/nilland-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face
-{
-    font-family: 'nillandbold';
-    src: url('../fonts/nilland-bold-webfont.woff2') format('woff2'),
-         url('../fonts/nilland-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 //fontes
-$font-main: 'nillandregular', 'PT Serif', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-main: 'Rokkitt', sans-serif;
+$font-texto: 'Raleway', sans-serif;
 $font-size-base: 10px;
 $font-weight-base: 100;
 
 //cores
-$color-txt-menu: "#000";
-$color-main: "#333";
+$color-txt-menu: #000;
+$color-main: #272727;
+
+//bg colors
+$bg-cinza: #ccc;
+$bg-cinza-ie: #e5e5e5;
+$bg-main: #fff;
+$bg-header: #006a43;
+
+//bordas
+$color-border-menu: #5d9f89;
+
+//forms
+$color-input: #555;
+$color-placeholder: #b3b3b3;
+
+//titulos
+$color-subheader: #006a43;
+
+//mobile resolucoes
+$desktop-land: 1200px;
+$desktop-port: 992px;
+$tablet-land: 959px;
+$tablet-port: 768px;
+$cell-land: 480px;
+$cell-port: 320px;
+
+//susy
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  container: 1200px,
+  container-position: center,
+  columns: 10,
+  gutters: 10,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);

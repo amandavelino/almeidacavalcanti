@@ -1,0 +1,83 @@
+#icon-mobile,
+.close
+{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 37px 0;
+    display: none;
+
+	@include breakpoint(max-width ($desktop-port - 1))
+	{
+		display: block;
+	}	
+
+}
+
+.close
+{
+	margin-right: 45px;
+}
+
+#menu-mobile
+{
+	position: fixed;
+    bottom: 0;
+    //left: 0;
+    right: -320px;
+    top: 0;
+    background: #fff;
+    background: rgba(255,255,255,.95);
+    z-index: 999999;
+    height: 100%;
+    width: 320px;
+    overflow: hidden;
+
+	@include transition(all .5s ease-out);	
+
+	.close
+	{
+
+	}
+
+	ul 
+	{
+		padding: 2em;
+
+		&.submenu
+		{
+			padding: 1em;
+			padding-bottom: 0;
+		}
+	
+		li 
+		{
+			padding: 1em;
+
+			a 
+			{
+				color: $color-main;
+				text-transform: uppercase;
+				font-size: $font-size-base * 1.3;
+				font-weight: $font-weight-base * 7;
+
+				&:hover
+				{
+					color: #006a43;
+				}
+
+			}
+		}
+
+	}
+
+}
+
+.expanded
+{
+	#menu-mobile
+	{
+		right: 0;
+	}
+}

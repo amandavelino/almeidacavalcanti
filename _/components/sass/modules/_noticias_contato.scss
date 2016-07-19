@@ -1,0 +1,244 @@
+$padding-divs: 40px;
+
+#noticias-contato
+{
+
+	background:#fff url("../imgs/bg-not-home.png") no-repeat 3% 50%;
+	position: relative;
+	clear: both;
+	margin: -5px 0;
+	z-index: 20;
+	overflow: hidden;
+	padding: 0;
+
+	@include breakpoint(max-width $tablet-port)
+	{
+		background-position: -35% 15%;
+	}	
+
+	header 
+	{
+		padding: 55px 0;
+
+		@include breakpoint(max-width $desktop-land)
+		{
+			padding: 35px 0;
+		}	
+
+		h2 
+		{
+			color: $color-main;
+			font-size: $font-size-base * 3.5;
+		}
+
+	}
+
+	.cont-interna
+	{
+		padding-left: 180px;
+    	padding-right: $padding-divs;
+    	padding-bottom: $padding-divs;
+
+		@include breakpoint(max-width ($desktop-port - 1))
+		{
+			padding-left: 0;
+			padding-right: 20px;
+		}	
+
+		@include breakpoint(max-width ($tablet-port - 1))
+		{
+			padding-left: 0;
+			padding-right: 0;
+		}			
+    	
+	}
+
+	.data 
+	{
+		background: $color-main;
+		padding: 10px;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		float: left;
+		margin-bottom: 10px;
+		margin-right: 10px;
+
+		h4 
+		{
+			color: #fff;
+			font-size: $font-size-base * 3;
+			line-height: .8em;
+		}
+
+		h5 
+		{
+			color: #fff;
+			font-size: $font-size-base * 1.8;
+			line-height: .8em;
+		}		
+
+	}
+
+	.noticia
+	{
+		width: span(6 wide);
+		float: left;
+		position: relative;
+		padding-bottom: 1000em;
+		margin-bottom: -1000em;
+
+		@include breakpoint(max-width $tablet-port)
+		{
+			float: none;
+			width: 100%;
+			padding-bottom: 0;
+			margin-bottom: 0;			
+		}
+
+		h3 
+		{
+			margin-bottom: 2em;
+			line-height: .8em;
+			margin-bottom: 10px;
+		}
+
+	}
+
+	.contato 
+	{
+		
+		width: span(4 wide);
+		float: right;
+		position: relative;
+		z-index: 10;
+		padding-bottom: 1000em;
+		margin-bottom: -1000em;
+
+		@include breakpoint(max-width $tablet-port)
+		{
+			float: none;
+			width: 100%;
+			padding-bottom: 0;
+			margin-bottom: 0;			
+		}
+
+		header 
+		{
+			padding-left: 40px;
+			padding-right: 40px;
+			@include breakpoint(max-width ($tablet-port - 1))
+			{
+				padding: 40px 0;
+			}			
+		}
+	
+		&:before
+		{
+			content: "";
+			background: $bg-cinza-ie;
+			position: absolute;
+			z-index: -5;
+			width: 200%;
+			height: 100%;
+			right: -100%;
+
+			@include breakpoint(max-width $tablet-port)
+			{
+				width: 200%;
+				height: 100%;
+				right: -50%;		
+			}
+
+		}
+
+		form 
+		{
+			padding: 0 40px;
+			@include breakpoint(max-width ($tablet-port - 1))
+			{
+				padding: 0;
+			}	
+
+		}
+
+		fieldset 
+		{
+			display: block;
+			margin: 15px 0;
+
+			label 
+			{
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"]
+			{
+				border: 1px solid #c2c2c2;
+				color: $color-input;
+				font-family: $font-texto;
+				font-size: $font-size-base * 1.5;
+				padding: 10px;
+				outline: none;
+				width: 94.5%;
+
+				@include input-placeholder
+				{
+					color: $color-placeholder;
+				}
+
+			}
+
+			textarea
+			{
+				border: 1px solid #c2c2c2;
+				color: $color-input;
+				font-family: $font-texto;
+				font-size: $font-size-base * 1.5;
+				padding: 10px;
+				outline: none;
+				width: 94.5%;	
+
+				height: 100px;
+				min-height: 100px;
+				max-height: 100px;	
+				
+				@include input-placeholder
+				{
+					color: $color-placeholder;
+				}
+
+			}
+
+		}
+
+	}
+
+	.btn-saibaMais,
+	input[type="submit"]
+	{
+		background: $color-main;
+		border: 0 none;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-family: $font-main;
+		font-size: $font-size-base * 2.2;
+		padding: 15px 50px 15px 25px;
+		outline: none;
+		line-height: 1em;
+
+		@include transition(all .5s ease-out);
+
+		&:hover,
+		&:focus 
+		{
+			background: $color-txt-menu;
+		}
+
+	}
+
+}
