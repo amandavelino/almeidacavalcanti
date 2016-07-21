@@ -13,17 +13,6 @@
 		z-index: 10;
 		padding: 35px 0;
 
-		@include breakpoint(max-width ($desktop-port - 1))
-		{
-			width: span(3 wide);
-		}			
-
-		@include breakpoint(max-width ($tablet-port - 1))
-		{
-			display: none;
-			width: 0%;
-		}		
-
 		&:before
 		{
 			background: $bg-cinza-ie;
@@ -37,13 +26,25 @@
 
 		}
 
+		@include breakpoint(max-width ($desktop-port - 1))
+		{
+			width: span(3 wide);
+		}			
+
+		@include breakpoint(max-width ($tablet-port - 1))
+		{
+			display: none;
+			width: 0%;
+		}		
+
 	}
 
 	.footerRgt
 	{
+		background: url("../imgs/dg-rodape.png") no-repeat 0 0;
 		width: span(8 wide);
 		float: right;
-		padding: 45px 0;
+		padding: 45px 0;	
 
 		@include breakpoint(max-width ($desktop-port - 1))
 		{
@@ -52,6 +53,7 @@
 
 		@include breakpoint(max-width ($tablet-port - 1))
 		{
+			background: none;
 			width: 100%;
 			padding: 20px 0;
 		}			
@@ -66,10 +68,10 @@
 		.mr 
 		{
 			width: 60%;
-			padding: 0 5%;
+			padding: 0 0 0 120px;
 			float: left;
 
-			@include breakpoint(max-width 500px)
+			@include breakpoint(max-width $tablet-port)
 			{
 				width: 100%;
 				padding: 0;
@@ -83,11 +85,22 @@
 			width: 25%;
 			float: right;
 
-			@include breakpoint(max-width 500px)
+			@include breakpoint(max-width $desktop-land)
+			{
+				width: 20%;
+			}	
+
+			@include breakpoint(max-width $tablet-land)
+			{
+				width: 15%;
+			}		
+
+			@include breakpoint(max-width $tablet-port)
 			{
 				width: 100%;
 				float: none;
-			}	
+				text-align: center;
+			}							
 
 			a 
 			{

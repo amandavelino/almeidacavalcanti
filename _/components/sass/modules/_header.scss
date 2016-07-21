@@ -8,11 +8,11 @@ header#principal
 	&:before 
 	{
 		content: "";
-		background: $bg-main;
+		background: $bg-main url("../imgs/dg-topo.png") no-repeat right top;
 		width: 100%;
-		height: 150px;
+		height: 100%;
 		position: absolute;
-		left: -10%;
+		left: -13%;
 		z-index: 0;
 
 		@include breakpoint(max-width $desktop-land)
@@ -23,7 +23,12 @@ header#principal
 		@include breakpoint(max-width ($desktop-port - 1))
 		{
 			height: 100px;
-		}			
+		}	
+
+		@include breakpoint(max-width 580px)
+		{
+			background-image: none;
+		}				
 
 	}
 
@@ -84,13 +89,23 @@ header#principal
 			li 
 			{
 				display: inline-block;
-				margin: 0 15px;
+				margin: 0 12px;
 				position: relative;
+
+				@include breakpoint(max-width 1400px)
+				{
+					margin: 0 8px;
+				}	
 
 				@include breakpoint(max-width $desktop-land)
 				{
 					margin: 0 10px;
 				}	
+
+				&.hasSubmenu
+				{
+					background: url("../imgs/seta-submenu.png") no-repeat 50% 80%;
+				}
 
 				&.active
 				{
@@ -109,8 +124,13 @@ header#principal
 				{
 					color: $color-main;
 					font-family: $font-main;
-					font-size: $font-size-base * 2;
+					font-size: $font-size-base * 1.9;
 					line-height: 7em;
+
+					@include breakpoint(max-width 1400px)
+					{
+						font-size: $font-size-base * 1.8;
+					}
 
 					@include breakpoint(max-width $desktop-land)
 					{
@@ -132,7 +152,7 @@ header#principal
 		{
 			position: absolute;
 			top: 140px;
-			left: -10%;
+			left: -50%;
 			width: 200%;
 			padding: 20px 0 15px;
 			background: #fff;
@@ -172,9 +192,66 @@ header#principal
 				.submenu 
 				{
 					@include opaque;
-					top: 140px;
+					top: 130px;
 				}
 			}
+
+		}
+
+	}
+
+	#redesSociais
+	{
+		position: absolute;
+		right: -10px;
+		top: 50px;
+
+		@include breakpoint(max-width 1400px)
+		{
+			right: 30px;
+		}	
+
+		@include breakpoint(max-width ($desktop-land))
+		{
+			display: none;
+		}				
+
+		li 
+		{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-right: 20px;
+
+			&:last-child
+			{
+				margin: 0;
+			}
+
+			&.face 
+			{
+				a 
+				{
+					background-position: left center;
+				}	
+			}
+
+			&.linkedin 
+			{
+				a 
+				{
+					background-position: right center;
+				}	
+			}
+
+			a 
+			{
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: url("../imgs/redesSociais.png") no-repeat 0 0;
+				text-indent: -9999px;
+			}						
 
 		}
 

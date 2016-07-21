@@ -1,6 +1,4 @@
 <section id="destaques">
-	
-
 		
 		<div class="destaque bgTxt">
 			
@@ -10,7 +8,9 @@
 
 			<p>Almeida Cavalcanti – Advogados & Associados é um Escritório de Advocacia composto de profissionais altamente qualificados para atuar em diversas áreas do Direito, prestando serviços de assistência nos variados segmentos das esferas administrativas e judiciais.</p>
 
-			<p>Almeida Cavalcanti – Advogados & Associados é um Escritório de Advocacia composto de profissionais altamente qualificados para atuar em diversas áreas do Direito, prestando serviços de assistência nos variados segmentos das esferas administrativas e judiciais.Escritório de Advocacia composto de profissionais altamente qualificados para atuar em diversas áreas do Direito, prestando serviços de assistência nos variados segmentos das esferas administrativas e judiciais.</p>				
+			<p>Almeida Cavalcanti – Advogados & Associados é um Escritório de Advocacia composto de profissionais altamente qualificados para atuar em diversas áreas do Direito, prestando serviços de assistência nos variados segmentos das esferas administrativas e judiciais.Escritório de Advocacia composto de profissionais altamente qualificados para atuar em diversas áreas do Direito, prestando serviços de assistência nos variados segmentos das esferas administrativas e judiciais.</p>	
+
+			<p><a href="#" class="saibaMais">Saiba Mais</a></p>			
 
 		</div><!-- /destaque -->
 

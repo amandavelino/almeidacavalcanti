@@ -52,7 +52,7 @@
 
 					</fieldset>
 
-					<fieldset>
+					<fieldset class="enviar-icon">
 						<input type="submit" id="enviar" name="enviar" value=" Enviar ">
 					</fieldset>
 

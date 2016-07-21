@@ -66,9 +66,9 @@
         outline: none;
         width: 94.5%; 
 
-        height: 68px;
-        min-height: 68px;
-        max-height: 68px;  
+        height: 117px;
+        min-height: 117px;
+        max-height: 117px;  
         
         @include input-placeholder
         {
@@ -82,10 +82,18 @@
       input[type="tel"],
       textarea
       {
+        @include transition(all .5s ease-out);
         @include breakpoint(max-width ($tablet-port - 1))
         {
           width: 93%;
         } 
+
+        &:hover,
+        &:focus
+        {
+          border: 1px solid #006a43;
+        }
+
       }      
 
     }
@@ -93,18 +101,42 @@
   }
 
   .btn-saibaMais,
+  #enviar,
+  .enviar-icon
+  {
+
+    width: auto;
+    position: relative;
+
+    &:before
+    {
+      background: url("../imgs/btn-bg.png") no-repeat 0 0;
+      content: "";
+      position: absolute;
+      z-index: 10;
+      bottom: -3px;
+      left: 0;
+      width: 26px;
+      height: 54px;
+    }
+
+  }
+
+  .btn-saibaMais,
   input[type="submit"]
   {
-    background: $color-main;
+    background: #006a43;
     border: 0 none;
     color: #fff;
     cursor: pointer;
     display: inline-block;
     font-family: $font-main;
     font-size: $font-size-base * 2.2;
-    padding: 15px 50px 15px 25px;
+    padding: 10px 50px 10px 25px;
     outline: none;
     line-height: 1em;
+    margin-top: -3px;
+    position: relative;
 
     @include transition(all .5s ease-out);
 
@@ -114,4 +146,9 @@
       background: $color-txt-menu;
     }
 
+  }
+
+  input[type="submit"]
+  {
+    width: 98%;
   }

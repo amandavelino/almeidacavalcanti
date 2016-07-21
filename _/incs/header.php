@@ -63,6 +63,11 @@
 			</ul>
 		</nav>
 
+		<ul id="redesSociais">
+			<li class="face"><a href="#" target="_blank">Facebook</a></li>
+			<li class="linkedin"><a href="#" target="_blank">Linkedin</a></li>
+		</ul>
+
 	</div><!-- container -->
 
 </header>

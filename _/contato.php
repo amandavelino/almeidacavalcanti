@@ -36,22 +36,20 @@
                             <input type="text" id="email" name="email" placeholder="Email">
                         </label>                                              
 
-                    </fieldset>
-
-                    <fieldset>
-
                         <label for="assunto">
                             <input type="text" id="assunto" name="assunto" placeholder="Assunto">
                         </label> 
 
+                    </fieldset>
+
+                    <fieldset>
+
                         <label for="mensagem">
                             <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
                         </label> 
-                        
-                    </fieldset>
 
-                    <fieldset class="full">
                         <input type="submit" id="enviar" name="enviar" value=" Enviar ">
+                        
                     </fieldset>
 
                 </form>
