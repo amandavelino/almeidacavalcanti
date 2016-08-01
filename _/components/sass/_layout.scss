@@ -104,21 +104,97 @@ p
 	position: relative;
 	z-index: 0;
 	margin: 0;
-	height: 575px;
+	width: 100%;
+	height: 463px;
 	overflow: hidden;
 
 	#slides 
 	{
-		height: 100%!important;
+
+		height: 575px!important;
+
+		.slides-control
+		{
+			width: 100%!important;
+			margin-top: -117px;
+		}
+		
+		img
+		{
+			width: 2000px!important;
+			height: 575px!important;
+			//max-width: 100%!important;
+		}
+	}
+
+	.container-slider
+	{
+		position: absolute;
+		top: 68%;
+		left: 10%;
+		width: 100%;
+		z-index: 99;
+
+		p 
+		{
+			color: #fff;
+			font-family: $font-main;
+			font-size: $font-size-base * 4;
+			font-weight: $font-weight-base * 4;
+			line-height: 1em;
+
+			strong
+			{
+				font-weight: $font-weight-base * 7;
+				display: block;
+			}
+		}
+
+		@include breakpoint(max-width ($desktop-land - 1))
+		{width: 80%;}		
+
+		@include breakpoint(max-width ($desktop-port - 1))
+		{
+			width: 80%;
+			
+			p
+			{font-size: $font-size-base * 3;}
+
+		}	
+
+		@include breakpoint(max-width ($tablet-port - 1))
+		{
+			//width: 450px;
+			top: 55%;
+		}	
+
+		@include breakpoint(max-width 500px)
+		{
+			p 
+			{
+				font-size: $font-size-base * 2.5;
+			}
+		}		
+
+		@include breakpoint(max-width ($cell-land - 1))
+		{//width: 300px;
+		}	
+
 	}
 
 	.slides-pagination
 	{
 	    position: absolute;
-	    z-index: 3;
-	    bottom: 20px;
+	    z-index: 90;
+	    top: 70%;
 	    text-align: center;
 	    width: 100%;
+
+		@include breakpoint(max-width ($tablet-port - 1))
+		{
+			top: 65%;
+		}	
+
 	}	
 
 	.slides-pagination a

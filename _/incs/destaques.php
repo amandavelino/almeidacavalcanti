@@ -16,7 +16,7 @@
 
 		<div class="destaque special">
 			
-			<img src="http://placehold.it/475x475">
+			<img src="http://placehold.it/640x640">
 			<footer>
 				<h4>Lorem Ipsum</h4>
 				<p>Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
@@ -26,7 +26,7 @@
 
 		<div class="destaque special">
 			
-			<img src="http://placehold.it/475x475">
+			<img src="http://placehold.it/640x640">
 			<footer>
 				<h4>Lorem Ipsum</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>

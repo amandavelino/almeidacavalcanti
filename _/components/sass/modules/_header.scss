@@ -206,6 +206,11 @@ header#principal
 		right: -10px;
 		top: 50px;
 
+		@include breakpoint(min-width 1920px)
+		{
+			right: -180px;
+		}	
+
 		@include breakpoint(max-width 1400px)
 		{
 			right: 30px;

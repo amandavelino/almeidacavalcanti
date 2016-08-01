@@ -1,13 +1,33 @@
 <section id="banner">
 
-	<div id="slides">
+	<div id="slides" style="height:575px!important;">
 
-		<div class="slides-container">
-			<img src="imgs/banner/people.jpeg" height="600" alt="Cinelli">
-			<img src="imgs/banner/surly.jpeg" width="1024" height="600" alt="Surly">
-			<img src="imgs/banner/cinelli-front.jpeg" width="1024" height="600" alt="Cinelli">
-			<img src="imgs/banner/affinity.jpeg" width="1024" height="600" alt="Affinity">
-		</div>
+		<ul class="slides-container">
+			<li>
+				<img src="imgs/banner/1.jpg" height="575px" alt="">
+				<div class="container-slider">
+					<p><strong>Atendimento em todas as comarcas</strong> do estado de PE.</p>
+				</div>
+			</li>
+			<li>
+				<img src="imgs/banner/2.jpg" height="575px" alt="">
+				<div class="container-slider">
+					<p><strong>Nosso Objetivo é proporcionar</strong> um atendimento de excelência.</p>
+				</div>				
+			</li>
+			<li>
+				<img src="imgs/banner/3.jpg" height="575px" alt="">
+				<div class="container-slider">
+					<p><strong>Serviços de assistência nos variados segmentos</strong> das esferas administrativas e judiciais.</p>
+				</div>				
+			</li>
+			<li>
+				<img src="imgs/banner/4.jpg" height="575px" alt="">	
+				<div class="container-slider">
+					<p><strong>Priorização ao</strong> atendimento personalizado.</p>
+				</div>				
+			</li>
+		</ul>
 
 		<nav class="slides-navigation">
 			<a href="#" class="next">Next</a>
