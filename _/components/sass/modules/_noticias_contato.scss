@@ -14,7 +14,7 @@ $padding-divs: 40px;
 	@include breakpoint(max-width $tablet-port)
 	{
 		background-position: -35% 15%;
-	}	
+	}	#noticias-contato
 
 	header 
 	{
@@ -38,6 +38,11 @@ $padding-divs: 40px;
 		padding-left: 180px;
     	padding-right: $padding-divs;
     	padding-bottom: $padding-divs;
+
+    	header 
+    	{
+    		padding: 40px 0;
+    	}
 
 		@include breakpoint(max-width ($desktop-port - 1))
 		{
@@ -115,11 +120,16 @@ $padding-divs: 40px;
 		padding-bottom: 1000em;
 		margin-bottom: -1000em;
 
+    	header 
+    	{
+    		padding: 40px 0;
+    	}
+
 		@include breakpoint(max-width $tablet-port)
 		{
 			float: none;
 			width: 100%;
-			padding-bottom: 0;
+			padding-bottom: 2em;
 			margin-bottom: 0;			
 		}
 

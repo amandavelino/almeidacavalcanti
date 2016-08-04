@@ -2,7 +2,7 @@
 {
 
   width: 105%;
-  margin: 0 -2.5%;
+  margin: 0 0 5%;
   overflow: hidden;
 
   //768px
@@ -15,9 +15,7 @@
   header
   {
     background-repeat: no-repeat;
-    padding-top: 120px;
-    padding-bottom: 10px;
-    text-align: center;
+    padding: 0 0 10px;
   }
 
   .interna 
@@ -33,19 +31,13 @@
   .item-atuacao
   {
     background-position: 0% 0%;
-    width: 28.33%;
-    margin: 0 2.5%;
-    float: left;
-
-    //768px
-    @include breakpoint(max-width ($tablet-port - 1))
-    {
-      margin: 0;
-      width: 100%;
-    } 
+    width: 100%;
+    margin: 0 0 2%;
+    // float: left;
 
   }
 
+  /*
   .at-01
   {
     background-image: url("../imgs/icon_atuacao01.jpg");
@@ -63,5 +55,6 @@
     background-image: url("../imgs/icon_atuacao03.jpg");
     background-repeat: no-repeat;
   }    
+  */
 
 }

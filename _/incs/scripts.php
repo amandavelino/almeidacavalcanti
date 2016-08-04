@@ -7,11 +7,15 @@
 <?php /* <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/pace.min.js"></script>
 <script type="text/javascript" src="js/maskbrfone.js"></script> */ ?>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script type="text/javascript" src="js/all.js"></script>
 <script>
+
 	$('#slides').superslides({
 		animation: 'fade'
 	});
+
+
 </script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

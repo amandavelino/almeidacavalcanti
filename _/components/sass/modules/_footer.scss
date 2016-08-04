@@ -58,11 +58,22 @@
 			padding: 20px 0;
 		}			
 
-		p 
+		p,
+		p a 
 		{
 			color: #acacac;
 			font-size: $font-size-base * 1.3;
 			margin: 0;
+		}
+
+		p a 
+		{
+			text-decoration: underline;
+
+			&:hover 
+			{
+				text-decoration: none;
+			}
 		}
 
 		.mr 
@@ -110,7 +121,7 @@
 				{
 					display: block;
 					width: 90px;
-					margin: 0 auto;
+					//margin: 0 auto;
 				}	
 
 			}
